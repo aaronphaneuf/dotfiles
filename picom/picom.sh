@@ -1,1 +1,3 @@
-/home/phaneuf/.config/picom/picom.sh
+#!/bin/bash
+picom
+

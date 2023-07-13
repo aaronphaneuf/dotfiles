@@ -1,1 +1,17 @@
-/home/phaneuf/.config/regolith2/Xresources
+regolith.terminal: alacritty
+
+Xcursor.theme: Adwaita
+Xcursor.size: 24
+#regolith.wallpaper.file: /home/phaneuf/Documents/forest.png
+
+#regolith.background: #2a2f3a
+
+#regolith.wallpaper.color.primary: #2a2f3a
+#regolith.wallpaper.color.secondary: #2a2f3a
+
+i3-wm.client.focused.color.child_border: #353b49
+
+i3-wm.gaps.inner.size: 15
+i3-wm.gaps.smart: false
+!regolith.look.path: /usr/share/regolith-look/nord
+regolith.look.path: /usr/share/regolith-look/ayu-mirage

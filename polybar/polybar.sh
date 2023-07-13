@@ -1,1 +1,3 @@
-/home/phaneuf/.config/polybar/polybar.sh
+#!/bin/bash
+sleep 1
+polybar example &
