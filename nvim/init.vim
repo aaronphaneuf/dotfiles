@@ -1,0 +1,1 @@
+/home/phaneuf/.config/nvim/init.vim
