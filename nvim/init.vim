@@ -1,6 +1,6 @@
 call plug#begin('~/.local/share/nvim/plugged')
 "Install NerdTree
-Plug 'preservim/nerdtree'
+"Plug 'preservim/nerdtree'
 
 "Install NerdCommenter
 Plug 'preservim/nerdcommenter'
@@ -12,6 +12,7 @@ Plug 'lukas-reineke/indent-blankline.nvim'
  Plug 'nvim-lua/popup.nvim'
  Plug 'nvim-lua/plenary.nvim'
  Plug 'nvim-telescope/telescope.nvim'
+ Plug 'nvim-telescope/telescope-file-browser.nvim'
 
 " Add any additional Telescope extensions you want to install
 " For example, to install the FZF extension:
@@ -37,8 +38,14 @@ set number
 " Set Leader
 let mapleader = ","
 
+" Set Telescope mappings
+nnoremap <leader>ff :Telescope find_files<cr>
+nnoremap <leader>fg :Telescope live_grep<cr>
+nnoremap <leader>fb :Telescope file_browser<cr>
+
  lua << END
 require('lualine').setup()
+require('telescope').load_extension "file_browser"
 END
 
 lua << EOF
